@@ -1,21 +1,21 @@
 on: 
   push:
     branches:
-          -main
-    
+      - main
+
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2.3.2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        server: ftpupload.net
-        username: if0_35404811
-        password: ${{ LALIT@123.KhsHXIuim4NYK }}
-        server-dir: /htdocs/
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2.3.2
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftpupload.net
+          username: if0_35404811
+          password: ${{ secrets.LALITPORT }}
+          server-dir: /htdocs/
