@@ -17,5 +17,5 @@ jobs:
         with:
           server: ftpupload.net
           username: if0_35404811
-          password: ${{ secrets.LALITPORT }}
+          password: ${{ secrets.KhsHXIuim4NYK }}
           server-dir: /lalitportfolio.infinityfreeapp.com/htdocs/
