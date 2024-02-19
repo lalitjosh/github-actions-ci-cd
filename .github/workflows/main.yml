@@ -18,4 +18,4 @@ jobs:
           server: ftpupload.net
           username: if0_36007611
           password: ${{ secrets.SECRETS }}
-          server-dir: /placemaker.kesug.com/htdocs/placemaker
+          server-dir: /placemaker.kesug.com/htdocs/placemaker/
